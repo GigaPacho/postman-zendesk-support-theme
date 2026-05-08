@@ -6308,3 +6308,58 @@ span.dropdown__badge {
   font-size: 12px;
   line-height: 18px;
 }
+
+/******** Language Switcher ********/
+.language-switcher__toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.language-switcher__icon {
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
+.language-switcher__label {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.language-switcher__menu {
+  min-width: 140px;
+  padding: 4px 0;
+}
+
+.language-switcher__option {
+  font-size: 14px;
+  padding: 6px 16px;
+  color: #212121;
+}
+
+.language-switcher__option:hover,
+.language-switcher__option:focus {
+  background-color: #f5f5f5;
+  color: #212121;
+}
+
+.language-switcher__option--active {
+  font-weight: 600;
+  color: rgba(255, 108, 55, 1);
+}
+
+.language-switcher__option--active:hover,
+.language-switcher__option--active:focus {
+  color: rgba(255, 108, 55, 1);
+}
+
+@media screen and (max-width: 992px) {
+  .language-switcher__menu {
+    border: none;
+    box-shadow: none;
+    padding-left: 8px;
+  }
+}
